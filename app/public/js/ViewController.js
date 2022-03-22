@@ -8,5 +8,8 @@ const View = {
     footer: "../partials/footer.html",
     form: "../partials/form.html",
   },
-  components: {},
+  components: {
+    notificationsTable: "../components/notificationsTable.html",
+    addButton: "../components/addButton.html",
+  },
 };

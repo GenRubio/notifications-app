@@ -17384,4 +17384,8 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+#content {
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=app.css.map */
