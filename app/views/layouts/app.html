@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../../public/css/app.css">
     <link rel="stylesheet" href="../../public/css/libs/jquery.dataTables.min.css">
     <script src="../../public/js/app.js"></script>
-    <script src="../../public/js/ViewController.js"></script>
     <script type="module" src="../../public/js/ViewHandler.js"></script>
     <script src="../../public/js/libs/jquery.dataTables.min.js"></script>
     <title>Notifications App</title>
@@ -22,14 +21,12 @@
         <div id="content" class="px-5 py-4">
             <component data-page="home"></component>
         </div>
-        <component data-partial="footer"></component>
     </div>
 </body>
 
-
 <script>
-    Render.loadComponent("partial", "navBar");
-    Render.loadComponent("page", "home");
+    Render.component("partial", "navBar");
+    Render.component("page", "home");
 </script>
 
 </html>

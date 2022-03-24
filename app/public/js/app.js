@@ -4,19 +4,20 @@ require('@fortawesome/fontawesome-free/js/fontawesome.js');
 window.toastr = require('toastr');
 var ipc = require('electron').ipcRenderer;
 const datepicker = require("js-datepicker");
+
 const Render = {
-  loadComponent(folder, view) {
+  component(folder, view) {
     const component = $("[data-" + folder + "='" + view + "']");
     const viewData = component.data(folder);
     switch (folder) {
       case "page":
-        component.load(View.pages[viewData]);
+        component.load("../pages/" + viewData + ".html");
         break;
       case "component":
-        component.load(View.components[viewData]);
+        component.load("../components/" + viewData + ".html");
         break;
       case "partial":
-        component.load(View.partials[viewData]);
+        component.load("../partials/" + viewData + ".html");
         break;
     }
   },

@@ -1,4 +1,5 @@
-//import { TinderSwipe } from "./controllers/TinderSwipe.js";
+import { HomePageController } from "./controllers/HomePageController.js";
+import { TableController } from "./controllers/TableController.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   onDocumentReady();
@@ -7,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function onDocumentReady() {
   initControllers();
 }
-function initControllers() {
 
+function initControllers() {
+  HomePageController.init();
+  TableController.init();
 }
