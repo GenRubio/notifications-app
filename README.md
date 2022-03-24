@@ -9,6 +9,10 @@ npm install
 ```
 
 ### Comandos
+- Iniciar proyecto
+```sh
+npm start
+```
 - Compilar SASS a CSS
 ```sh
 npm run watch
