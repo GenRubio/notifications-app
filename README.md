@@ -95,3 +95,37 @@ app/views/components/contactForm.html
     Render.component("component", "formDescription");
   </script>
 ```
+
+### Resultado renderizado:
+```sh
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+      <component data-partial="navBar">
+        <div>  
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+        </div>
+      </component>
+      <div>
+         <component data-component="contactForm">
+             <component data-component="formDescription">
+                  <div>
+                     <h1>Hola mundo soy un formulario :)</h1>
+                  </div>
+             </component>
+             <form>
+                <input type="text" name="name" />
+             </form>
+         </component>
+      <div>
+  </body>
+</html>
+
+
+```
