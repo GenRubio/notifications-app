@@ -77,10 +77,21 @@ app/views/partials/navBar.html
       </ul>
   </div>
 ```
+app/views/components/formDescription.html
+```sh
+  <div>
+     <h1>Hola mundo soy un formulario :)</h1>
+  </div>
+```
 
 app/views/components/contactForm.html
 ```sh
+  <component data-component="formDescription"></component>
   <form>
      <input type="text" name="name" />
   </form>
+  
+  <script>
+    Render.component("component", "formDescription");
+  </script>
 ```
