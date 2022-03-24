@@ -59,12 +59,12 @@ Ejemplo:
          <component data-component="contactForm"></component>
       <div>
   </body>
-</html>
-
-<script>
+  <script>
     Render.component("component", "contactForm");
     Render.component("partial", "navBar");
-</script>
+  </script>
+</html>
+
 
 ```
 
